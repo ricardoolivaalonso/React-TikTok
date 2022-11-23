@@ -1,0 +1,20 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+	font-family:  "Sofia", monospace;
+	font-weight: 900;
+}
+
+::-moz-selection { 
+	color: $bg;
+	background: $caret;
+}
+  
+::selection {
+	color: $bg;
+	background: $caret;
+}

@@ -1,0 +1,31 @@
+.profile-header{
+    &__stats{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: start;
+        gap: var(--gap);
+        overflow: hidden;
+        
+        margin-top: calc(var(--gap) * 1);
+        margin-bottom: calc(var(--gap) * .5);
+
+        @media screen and (max-width: $mq-phone) { 
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &-item{
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: start;
+            align-items: center;
+            gap: 4px;
+        }
+        &-counter{ @include font_bio-name(.95); }
+        &-category{
+            @include font-name();
+            text-transform: uppercase;
+        }
+    }
+}

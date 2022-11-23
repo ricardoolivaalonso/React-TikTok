@@ -1,0 +1,8 @@
+.paragraph-element{
+    @include font_name(1, 1, 1.5);
+    @include font_truncate();
+
+    @media screen and (max-width: $mq-phone) {
+        text-align: center;
+    }
+}

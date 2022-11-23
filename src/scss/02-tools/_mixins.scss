@@ -1,0 +1,60 @@
+@mixin flex($display, $justify, $align, $direction, $wrap) {
+	display: $display;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+}
+@mixin font_main-menu(){
+	font-family: 'Proxima';
+	font-size: 1.125rem;
+	line-height: 1.5625;
+	font-weight: 900;
+}
+@mixin font_account-title{
+	padding: 0 calc(var(--gap) * .5);
+	font-family: 'Proxima';
+	font-size: .875rem;
+	line-height: 1.25;
+	font-weight: 600;
+	color: rgba($text, .75);
+}
+@mixin font_username(){
+	font-size: 1rem;
+    line-height: 1.375;
+    font-weight: 700;
+}
+@mixin font_name($size: .75, $opa: .75, $lh: .9375){
+	font-family: 'Proxima';
+	font-size: .75rem;
+	font-weight: 400;
+	line-height: .9375;
+	color: rgba($text, .75);
+
+	@if $size != .75 { font-size: #{$size}rem; }
+	@if $opa != .75 { color: rgba($text, $opa); }
+	@if $lh != .75 { line-height: #{$lh}; }
+}
+@mixin font_bio-username(){
+	width: 100%;
+	max-width: 400px;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.1875;
+	padding-bottom: 4px;
+}
+@mixin font_bio-name($size: 1.125){
+	font-size: #{$size}rem;
+	width: 100%;
+	max-width: 400px;
+	font-family: 'Proxima';
+	font-weight: 600;
+	line-height: 1.38;
+
+	@if $size != 1.125 { font-size: #{$size}rem; }
+}
+@mixin font_truncate(){
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

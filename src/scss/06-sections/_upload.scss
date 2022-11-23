@@ -1,0 +1,38 @@
+.upload{
+    &-header{
+        &__title{
+            font-size: 1.5rem;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        &__subtitle{
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.5;
+            font-family: 'Proxima';
+            color: rgba($text, .5);
+        }
+    }
+    &-wrapper{
+        display: grid;
+        grid-template-columns: 3fr minmax(200px, 1fr);
+        grid-template-rows: 275px auto;
+        grid-template-areas: 
+            "drag video"
+            "form form"
+        ;
+        gap: var(--gap);
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: $mq-tablet) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 250px 300px auto;
+            grid-template-areas: 
+                "drag" 
+                "video" 
+                "form"
+            ;
+        }
+    } 
+}

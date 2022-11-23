@@ -1,0 +1,8 @@
+.is-hidden-mobile{
+    @media screen and (max-width: $mq-small-desktop) { display: none; }
+}
+.is-video-loaded{
+    border: 2px solid rgba($cyan, .25);
+    background-color: rgba($cyan, .125);
+    &:hover{ border: 2px solid rgba($cyan, .25); }
+}

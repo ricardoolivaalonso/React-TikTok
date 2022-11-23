@@ -1,0 +1,32 @@
+.button-element{
+    @include font_bio-name(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+    width: max-content;
+    height: 36px;
+    padding: 0 var(--gap);
+    border: 1px solid $border;
+    border-radius: $radius;
+    background-color: $bg;
+    cursor: pointer;
+
+    &:hover{ background-color: darken($bg, 5);}
+
+    &--big{ 
+        height: 46px; 
+        width: 150px; 
+
+        @media screen and (max-width: $mq-phone) {
+            width: 100% !important;
+        }
+    }
+    &--cta{
+        background-color: $caret;
+        color: $bg;
+
+        &:hover{ background-color: darken($caret, 5);}
+    }
+}

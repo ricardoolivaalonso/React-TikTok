@@ -1,0 +1,10 @@
+.header{
+    &-logos{ margin-top: 5px; }
+    &-actions{
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        gap: var(--gap);
+    }
+}
+

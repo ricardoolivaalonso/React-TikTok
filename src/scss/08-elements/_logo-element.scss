@@ -1,0 +1,13 @@
+.logo{
+    &-element{
+        svg{ width: 118px; }
+        @media screen and (max-width: $mq-small-tablet) { display: none; }
+    
+        &--mobile{
+            display: none;
+            @media screen and (max-width: $mq-small-tablet) { display: inherit; }
+          
+            svg{ width: 20px; }
+        }
+    }
+}

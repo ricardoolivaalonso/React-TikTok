@@ -1,0 +1,78 @@
+.upload{
+    &-media{
+        grid-area: drag;
+        display: flex;
+        justify-content: center;
+        gap: calc(var(--gap) * 2);
+        width: 100%;
+        padding: calc(var(--gap) * 2);
+
+        border-radius: $radius;
+        border: 2px dashed rgba($caret, .5);
+        cursor: pointer;
+
+        &:hover{ border: 2px dashed $caret; }
+    }
+        &-drag{
+            display: grid;
+            justify-items: center;
+            gap: var(--gap);
+
+            &__title{
+                @include font_bio-name(1.125);
+                text-align: center;
+            }
+            &__subtitle{
+                @include font_name(1);
+                text-align: center;
+            }
+        }
+    &-player{
+        grid-area: video;
+        display: flex;
+        place-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        object-fit: cover;
+
+        border-radius: $radius;
+        background-color: rgba($text, .15);
+
+        video{
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+    &-form{
+        grid-area: form;
+        display: grid;
+        align-content: start;
+        gap: var(--gap);
+        width: 100%;
+
+        &__group{
+            display: grid;
+            row-gap: calc(var(--gap) * .5);
+
+            &--column{
+                grid-auto-flow: column;
+                justify-content: end;
+                column-gap: var(--gap);
+
+                @media screen and (max-width: $mq-phone) {
+                    grid-auto-flow: row;
+                    justify-content: stretch;
+                }
+            }
+
+        }
+        &__label{ @include font_bio-name(1.125); }
+        &__input{
+            border: 1px solid $border;
+            border-radius: $radius;
+            height: 46px;
+            padding: 0 var(--gap);
+        }
+    }
+}

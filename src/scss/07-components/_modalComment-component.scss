@@ -1,0 +1,26 @@
+.modal{
+    --form: 82px;
+    
+    &-comments{
+        --info-stats: 238px;
+        width: 100%;
+        min-height: 150px;
+        overflow: hidden;
+
+        @media screen and (max-width: $mq-medium-tablet) {
+            min-height: 75px;
+            height: 75px;
+            max-height: 225px;
+        }
+        
+        &__scroll{
+            padding: 0 calc(var(--gap) * 2);
+            height: 100%;
+            overflow-y: scroll;
+        }
+    }
+    &__ref{
+        display: grid;
+        gap: var(--gap);
+    }
+}

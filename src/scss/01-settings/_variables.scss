@@ -1,0 +1,29 @@
+:root{
+    --gap: 16px;
+    --font-size: 16px;
+    --header: 60px;
+    --max-width: 100%;
+}
+
+$z-header: 10;
+$z-modal: 20;
+$z-auth: 30;
+
+$mq-bigger-desktop: 1800px;
+$mq-big-desktop: 1600px;
+$mq-medium-desktop: 1400px;
+$mq-small-desktop: 1070px;
+$mq-tablet: 900px;
+$mq-medium-tablet: 780px;
+$mq-small-tablet: 700px;
+$mq-phone: 420px;
+
+$bg: #ffffff;
+$text: #161823;
+$border: #e4e4e4;
+$caret: #fe2c55;
+$cyan: #26f4ee;
+$form: #f1f1f2;
+$radius: 4px;
+
+$transition: 100ms linear;

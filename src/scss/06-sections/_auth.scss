@@ -1,0 +1,13 @@
+.auth{
+    &-modal{
+        display: grid;
+        gap: var(--gap);
+        width: 475px;
+        padding: calc(var(--gap) * 2) 54px 0 54px;
+        background-color: $bg;
+
+        @media screen and (max-width: $mq-medium-tablet) {
+            padding: calc(var(--gap) * 2) calc(var(--gap) * 2) 0 calc(var(--gap) * 2);
+        }
+    }
+}

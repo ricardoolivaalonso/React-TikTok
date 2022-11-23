@@ -1,0 +1,23 @@
+.modal-card{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: var(--gap);
+    margin-bottom: 12px;
+
+    &__info,
+    &__actions{
+        display: grid;
+    }
+    &__actions{
+        grid-auto-flow: column;
+        justify-items: center;
+        align-items: start;
+        gap: 8px;
+    }
+        &__action{
+            display: grid;
+            justify-items: center;
+        }
+}
+

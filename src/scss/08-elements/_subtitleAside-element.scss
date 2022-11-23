@@ -1,0 +1,12 @@
+.subtitle-aside{
+    @include font_account-title();
+    @include font-truncate();
+    width: 145px;
+    margin: calc(var(--gap) * .5) 0;
+    cursor: text;
+
+    &--cta{ 
+        color: $caret; 
+        cursor: pointer;
+    }
+}

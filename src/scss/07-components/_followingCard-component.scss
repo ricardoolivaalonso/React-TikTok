@@ -1,0 +1,24 @@
+.following{
+    &-card{
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+
+        height: 49px;
+        padding: 0 calc(var(--gap) * .5);
+
+        &__info{
+            display: grid;
+            row-gap: 2px;
+        }
+            &__username,
+            &__name{
+                width: 145px;
+                @include font-truncate();
+            }
+
+            &__username{ @include font-username(); }
+            &__name{ @include font-name(); }
+    }
+}

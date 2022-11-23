@@ -1,0 +1,24 @@
+.modal{
+    &__stats{
+        display: grid;
+        grid-auto-flow: column;
+        gap: var(--gap);
+        justify-content: start;
+
+        padding: 0 calc(var(--gap) * 2) var(--gap);
+        border-bottom: 1px solid $border;
+
+        a{
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 8px;
+        }
+        span{
+            font-size: .75rem;
+            font-weight: 400;
+            font-family: "Proxima";
+            min-width: 10px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.modal{
+    &-form{
+        display: grid;
+        grid-template-columns: 1fr 60px;
+        align-content: center;
+
+        width: 100%;
+        height: var(--form);
+        padding: 0 calc(var(--gap) * 2);
+        border-top: 1px solid $border;
+
+        margin-top: auto;
+
+        &__input{
+            height: calc(var(--form)/2);
+            padding: 0 8px;
+            background-color: darken($form, 2);
+            border-radius: $radius;
+            border: 1px solid $border;
+        }
+        &__button{
+            color: $caret;
+            border-radius: $radius;
+        }
+    }
+}

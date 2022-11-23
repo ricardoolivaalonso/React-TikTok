@@ -1,0 +1,6 @@
+.paragraphFluid-element{
+    @include font_name(1, 1, 1.5);
+    @media screen and (max-width: $mq-phone) {
+        // text-align: center;
+    }
+}

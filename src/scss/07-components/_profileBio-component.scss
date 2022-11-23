@@ -1,0 +1,37 @@
+.profile-header{
+    &__bio{
+        display: grid;
+        justify-content: start;
+        align-items: start;
+        grid-auto-flow: column;
+        gap: var(--gap);
+        
+        width: 100%;
+        max-width: 532px;
+
+        @media screen and (max-width: $mq-phone) {
+            grid-auto-flow: row;
+            justify-items: center;
+            justify-content: center;
+        }
+    }
+        &__info{
+            display: grid;
+            justify-items: start;
+           
+            @media screen and (max-width: $mq-phone) { justify-items: center; }
+
+            &-username{ @include font_bio-username(); }
+            &-name{ 
+                @include font_bio-name(); 
+                margin-bottom: var(--gap);
+            }
+            &-name,
+            &-username{
+                @include font_truncate();
+                @media screen and (max-width: $mq-phone) { text-align: center; }
+                user-select: text;
+            }
+        }
+
+}

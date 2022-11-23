@@ -1,0 +1,38 @@
+body{
+    width: 100%;
+    min-width: 320px;
+    font-size: var(--font-size);
+    background-color: bg;
+    color: $text;
+}
+button,
+input,
+textarea{
+	font-family:  "Proxima", monospace;
+    font-weight: 400;
+
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    caret-color: $caret;
+    background-color: transparent;
+}
+textarea{
+    padding: var(--gap);
+}
+input[type="file"]{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: $text;
+}
+a,
+button{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+

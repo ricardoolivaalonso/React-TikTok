@@ -1,0 +1,25 @@
+.profile{
+    &-header{ display: grid; }
+    &-videos{
+        display: grid;
+        width: 100%;
+        gap: calc(var(--gap) * .5);
+    }
+    &-videos__list{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: var(--gap);
+        row-gap: calc(var(--gap) * 1.5);
+
+        @media screen and (min-width: $mq-big-desktop) { grid-template-columns: repeat(7, 1fr); }
+        @media screen and (min-width: $mq-bigger-desktop) { grid-template-columns: repeat(8, 1fr); }
+
+        @media screen and (max-width: $mq-medium-desktop) { grid-template-columns: repeat(5, 1fr); }
+        @media screen and (max-width: $mq-small-desktop) { grid-template-columns: repeat(4, 1fr); }
+        @media screen and (max-width: $mq-tablet) { grid-template-columns: repeat(3, 1fr); }
+        @media screen and (max-width: $mq-medium-tablet) { grid-template-columns: repeat(2, 1fr); }
+        @media screen and (max-width: $mq-phone) { grid-template-columns: repeat(1, 1fr); }
+    }  
+}
+
+

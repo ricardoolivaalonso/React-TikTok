@@ -1,0 +1,6 @@
+.modal{
+    &__info{
+        display: grid;
+        padding: 0 calc(var(--gap) * 2);
+    } 
+}

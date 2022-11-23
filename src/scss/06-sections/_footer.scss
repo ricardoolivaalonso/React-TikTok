@@ -1,0 +1,16 @@
+.footer{
+    &__group{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 6px;
+    }
+    &__group + &__group{
+        margin-top: calc(var(--gap) * 1);
+    }
+    &__item{
+        @include font-name();
+        list-style: 2;
+
+        &:hover { text-decoration: underline; }
+    }
+}

@@ -1,0 +1,16 @@
+.closeModal-element{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+
+    background-color: rgba($text, .5);
+    border-radius: 50%;
+    z-index: 1;
+}
