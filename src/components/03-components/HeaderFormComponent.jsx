@@ -33,7 +33,7 @@ export const HeaderFormComponent = () => {
     }
 
     return (
-        <form className="header-form" tabIndex={0}>
+        <form className="header-form" tabIndex={0} onSubmit={ e => e.preventDefault()}>
             <input className='header-form__input' type="text" placeholder="Searh account and videos"
                 value={input}
                 onChange={(e)=>userIsTyping(e.target.value.toLowerCase())}
